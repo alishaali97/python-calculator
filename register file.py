@@ -1,7 +1,4 @@
-# Dictionary to store users (username: password)
 users = {}
-
-# Signup function
 def signup():
     print("\n=== Signup ===")
     username = input("Enter username: ")
@@ -12,8 +9,6 @@ def signup():
     password = input("Enter password: ")
     users[username] = password
     print("Signup successful! You’re ready to go!")
-
-# Login function
 def login():
     print("\n=== Login ===")
     username = input("Enter username: ")
@@ -23,8 +18,6 @@ def login():
         print("Login successful! Welcome back!")
     else:
         print("Wrong username or password. Try again!")
-
-# Main menu
 def main():
     while True:
         print("\n=== Login/Signup ===")
@@ -44,5 +37,4 @@ def main():
         else:
             print("Pick 1, 2, or 3 only!")
 
-# Run the program
 main()
